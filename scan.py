@@ -4,8 +4,14 @@
 from argparse import ArgumentParser
 from collections import defaultdict
 import os
+import re
 
 htmext='.htm','.html'
+
+def topLevel(text):
+    regex='(<!doctype.*>).*(<html>.*</html>)'
+    match=re.search(regex,text,re.DOTALL|re.IGNORECASE)
+    print(f'{"match" if match else "*** NO MATCH ***"}')
 
 def doFile(path,file,ftc):
     ext=os.path.splitext(file)[1]
@@ -13,8 +19,12 @@ def doFile(path,file,ftc):
     if ext.lower() not in htmext:
         print(f'skip: {file}')
         return
-    print(f'do: {file}')
-    # doFile(os.path.join(path, file))
+    filename=os.path.join(path, file)
+    print(f'check: {filename}')
+    text=None
+    with open(filename,'r',encoding='utf-8') as file:
+        text=file.read()
+    topLevel(text)
 
 def doAllFiles(root,ftc):
     for path, dirs, files in os.walk(root):
