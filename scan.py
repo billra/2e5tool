@@ -5,17 +5,23 @@ from argparse import ArgumentParser
 from collections import defaultdict
 import os
 
-def doFile(file):
+htmext='.htm','.html'
+
+def doFile(path,file,ftc):
+    ext=os.path.splitext(file)[1]
+    ftc[ext if ext else 'none']+=1
+    if ext.lower() not in htmext:
+        print(f'skip: {file}')
+        return
     print(f'do: {file}')
+    # doFile(os.path.join(path, file))
 
 def doAllFiles(root,ftc):
     for path, dirs, files in os.walk(root):
         # Skip hidden directories
         dirs[:]=[d for d in dirs if not d.startswith('.')] # note slice assignment
         for file in files:
-            ext=os.path.splitext(file)[1]
-            ftc[ext if ext else 'none']+=1
-            doFile(os.path.join(path, file))
+            doFile(path,file,ftc)
 
 def main():
     print('scan')
