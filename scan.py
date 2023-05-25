@@ -33,3 +33,51 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"> --> <!DOCTYPE html>
+# <HTML>
+# <HEAD>
+# <TITLE>NPWC Falken</TITLE>
+# <META NAME="author" CONTENT="Bill Ola Rasmussen">
+# <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+# <meta name="keywords" content="NASA, Parawing, Research, npw, singleskin">
+# <link rel="stylesheet" type="text/css" href="/style.css">
+# <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+# <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+# </HEAD>
+# <BODY>
+# <div class="head">
+# <div class="rflo">
+# <a href="/"><img src="/img/2e5.jpg" width="277" height="42" alt="2e5.com" ></a></div>
+# <h1>NPWC Falken</h1></div>
+# <div class="navBar">
+# <div class="rflo">
+# tags:
+# <a href="/tags/kite/">kite</a>
+# </div>
+# <a href="../../..">2e5</a> &raquo;
+# <a href="../..">kite</a> &raquo;
+# <a href="..">npwc</a> &raquo;
+# Falken
+# </div>
+# <div class="main">
+# ...
+# </div>
+# <div class="navBar">
+# <div class="rflo">
+# tags:
+# <a href="/tags/kite/">kite</a>
+# </div>
+# <a href="../../..">2e5</a> &raquo;
+# <a href="../..">kite</a> &raquo;
+# <a href="..">npwc</a> &raquo;
+# Falken
+# </div>
+# <p>
+# <a href="http://validator.w3.org/check?uri=referer">
+# <img src="/img/valid-html401.png" alt="Validate HTML 4.01 Strict" height="31" width="88"></a> <-- update to 5?
+# <a href="http://jigsaw.w3.org/css-validator/check/referer">
+# <img src="/img/valid-css.png" alt="Validate CSS" height="31" width="88"></a> <-- still the same?
+# <p>&copy;2016 Bill Ola Rasmussen
+# </BODY>
+# </HTML>
